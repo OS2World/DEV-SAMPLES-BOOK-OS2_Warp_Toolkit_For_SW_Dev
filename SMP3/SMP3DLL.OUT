@@ -1,0 +1,372 @@
+
+Operating System/2 Executable File Header Utility
+Version 3.00.003 May 23 1995
+Copyright (C) IBM Corporation 1988-1995
+Copyright (C) Microsoft Corp. 1988-1992.
+All rights reserved.
+
+.EXE size (bytes)         5220
+Magic number:             5a4d
+Bytes on last page:       0200
+Pages in file:            0005
+Relocations:              0000
+Paragraphs in header:     0004
+Extra paragraphs needed:  0000
+Extra paragraphs wanted:  ffff
+Initial stack location:   0008:0200
+Word checksum:            0000
+Entry point:              0000:0000
+Relocation table address: 0040
+Reserved words:
+ 0000 0000 0000 0000 0000 0000 0000 0000
+ 0000 0000 0000 0000 0000
+New executable header address:  00000080
+Memory needed:            3K
+
+Library:                        smp3dll
+Description:                    OS/2 32-bit DLL - Simple DLL
+Executable format level:        0
+CPU type:                       Intel 80386 or upwardly compatible
+Operating system:               Operating System/2
+Module version:                 20002
+Module type:                    Dynamic link library
+                                Global initialization
+                                Global termination
+Number of memory pages:         00000005 (5)
+Initial CS:EIP:                 object 1 offset 000000a0
+Initial SS:ESP:                 object 0 offset 00000000
+Automatic data object:          2
+Memory page size:               00001000
+Page shift alignment:           00000009
+Fixup section size:             000007bc
+Fixup section checksum:         00000000
+Loader section size:            00000075
+Loader section checksum:        00000000
+Object Table:                   00000144 length 00000058 (88)
+Object Table Entries:           00000002 (2)
+Resource Table:                 00000000 length 00000000 (0)
+Resource Table Entries:         00000000 (0)
+Resident Names Table:           0000019c length 00000013 (19)
+Entry Table:                    000001af length 0000000a (10)
+Module Directives Table:        00000000 length 00000000 (0)
+Module Directives Entries:      00000000 (0)
+Per-Page Checksum Table:        00000000 length 00000000 (0)
+Imported Modules Name Table:    00000964 length 00000011 (17)
+Imported Modules:               00000003 (3)
+Imported Procedures Name Table: 00000975 length 00000000 (0)
+Preload Instance Pages:         00000a00 number 00000000 (0)
+Preload Pages:                  00000a00 number 00000000 (0)
+Demand Instance Pages:          00000a00 number 00000000 (0)
+Non-resident Names Table:       00005200 length 00000020 (32)
+Non-resident Names Checksum:    00000000
+Debug Information:              00000000 length 00000000 (0)
+
+ no. virtual  virtual  map      map      flags
+     address   size    index    size
+0001 00010000 00003cc8 00000001 00000004 EXECUTABLE, READABLE, NONSHARED,
+                                         LOADONCALL, NONCONFORMING, NONRESOURCE,
+                                         NONDISCARDABLE, VALID-PAGES, SWAPPABLE,
+                                         NO 16:16 ALIAS, 32-bit, NOIOPL
+                                           map    physical page flags
+                                          entry    page @  size       
+                                         00000001 00000a00 1000 VALID
+                                         00000002 00001a00 1000 VALID
+                                         00000003 00002a00 1000 VALID
+                                         00000004 00003a00 0e00 VALID
+0002 00020000 000008e4 00000005 00000001 READABLE, WRITEABLE, SHARED,
+                                         LOADONCALL, NONRESOURCE,
+                                         NONDISCARDABLE, VALID-PAGES, SWAPPABLE,
+                                         NO 16:16 ALIAS, 32-bit, NOIOPL
+                                           map    physical page flags
+                                          entry    page @  size       
+                                         00000001 00004800 0a00 VALID
+
+
+Exports:
+ord obj  offset    name
+  1   1  00000000  RECUR exported, shared data
+
+page 1            type         offset     target
+obj  1:0000       REL OFF(32)  02ed       imp NLS.6
+                  REL OFF(32)  0e83       imp DOSCALLS.331
+                  REL OFF(32)  04e9       imp DOSCALLS.348
+                  REL OFF(32)  021b       imp DOSCALLS.224
+                  REL OFF(32)  08d0       imp DOSCALLS.356
+                  REL OFF(32)  chain:06   imp DOSCALLS.299
+                         038d 03ca 03fb 0438 0469 04a6 
+                  REL OFF(32)  chain:03   imp DOSCALLS.304
+                         06b7 06cf 06e7 
+                  REL OFF(32)  0282       imp DOSCALLS.312
+                  REL OFF(32)  chain:02   imp DOSCALLS.378
+                         0777 0e9e 
+                  OFFSET(32)   chain:05   object    2 offset 0000
+                         000b 0017 004c 0054 0062 
+                  OFFSET(32)   0067       object    2 offset 0040
+                  OFFSET(32)   0509       object    2 offset 0280
+                  OFFSET(32)   chain:04   object    2 offset 0540
+                         0570 0581 0591 0604 
+                  OFFSET(32)   0e68       object    2 offset 0300
+                  OFFSET(32)   0027       object    2 offset 0004
+                  OFFSET(32)   0303       object    2 offset 0544
+                  OFFSET(32)   03c5       object    2 offset 0184
+                  OFFSET(32)   04a1       object    2 offset 0244
+                  OFFSET(32)   04cf       object    2 offset 08c4
+                  OFFSET(32)   chain:02   object    2 offset 0304
+                         0d09 0d11 
+                  OFFSET(32)   01c2       object    1 offset 01c8
+                  OFFSET(32)   chain:03   object    2 offset 0148
+                         034d 0388 03b3 
+                  OFFSET(32)   chain:04   object    2 offset 0208
+                         0361 037c 0464 048f 
+                  OFFSET(32)   04d9       object    2 offset 08c8
+                  OFFSET(32)   chain:02   object    2 offset 028c
+                         025d 0347 
+                  OFFSET(32)   0331       object    2 offset 054c
+                  OFFSET(32)   0378       object    2 offset 01d0
+                  OFFSET(32)   04d3       object    2 offset 0550
+                  OFFSET(32)   04f7       object    2 offset 08d0
+                  OFFSET(32)   chain:02   object    2 offset 0090
+                         06c0 06f1 
+                  OFFSET(32)   0f89       object    1 offset 0f90
+                  OFFSET(32)   0500       object    2 offset 08d1
+                  OFFSET(32)   chain:06   object    2 offset 0094
+                         00eb 012f 01d7 0693 06d8 06fb 
+                  OFFSET(32)   03b9       object    2 offset 0194
+                  OFFSET(32)   0495       object    2 offset 0254
+                  OFFSET(32)   04dd       object    2 offset 0554
+                  OFFSET(32)   chain:02   object    2 offset 0894
+                         0767 0ead 
+                  OFFSET(32)   chain:03   object    2 offset 0098
+                         069d 06a8 0707 
+                  OFFSET(32)   chain:02   object    2 offset 0898
+                         0ef2 0f1e 
+                  OFFSET(32)   chain:08   object    2 offset 009c
+                         0287 0535 0664 067f 0714 08e7 0a95 0fc9 
+                  OFFSET(32)   chain:02   object    2 offset 081c
+                         0eca 0eea 
+                  OFFSET(32)   chain:02   object    2 offset 089c
+                         0efc 0f26 
+                  OFFSET(32)   chain:02   object    1 offset 0f9c
+                         0f94 0f98 
+                  OFFSET(32)   chain:07   object    2 offset 0820
+                         079a 07bb 07d2 07e9 0f9e 0fe6 0ff6 
+                  OFFSET(32)   chain:02   object    2 offset 08e0
+                         0e6e 0e7c 
+                  OFFSET(32)   chain:02   object    2 offset 0660
+                         0ec2 0ed1 
+                  OFFSET(32)   0f90       object    1 offset 1060
+                  OFFSET(32)   0fb4       object    1 offset 29e0
+                  OFFSET(32)   0433       object    2 offset 01e4
+                  OFFSET(32)   chain:02   object    2 offset 0824
+                         078b 0fad 
+                  OFFSET(32)   chain:02   object    2 offset 02a8
+                         02d7 02fa 
+                  OFFSET(32)   chain:04   object    2 offset 01a8
+                         0357 0372 03f6 0421 
+                  OFFSET(32)   chain:02   object    1 offset 1f6c
+                         00ce 0e5f 
+                  OFFSET(32)   chain:02   object    2 offset 086c
+                         051b 0658 
+                  OFFSET(32)   036e       object    2 offset 0170
+                  OFFSET(32)   018d       object    1 offset 01b4
+                  OFFSET(32)   0427       object    2 offset 01f4
+                  OFFSET(32)   chain:04   object    1 offset 0f38
+                         00f2 0164 08ee 0a54 
+                  OFFSET(32)   chain:0f   object    2 offset 08b8
+                         0541 0549 0556 055e 0564 0576 059a 05a3 05b5 05c6 
+                         05ce 0610 0616 0631 0642 
+                  OFFSET(32)   0277       object    2 offset 02bc
+                  OFFSET(32)   0515       object    2 offset 027c
+                  OFFSET(32)   01b8       object    1 offset 01be
+
+page 2            type         offset     target
+obj  1:1000       OFFSET(32)   0de7       object    2 offset 03c0
+                  OFFSET(32)   0666       object    1 offset 1084
+                  OFFSET(32)   0750       object    1 offset 1784
+                  OFFSET(32)   090c       object    1 offset 1984
+                  OFFSET(32)   062d       object    1 offset 1310
+                  OFFSET(32)   070a       object    1 offset 1710
+                  OFFSET(32)   chain:0c   object    1 offset 1790
+                         0714 0718 0720 0724 0728 072c 0730 0734 0738 0740 
+                         0748 074c 
+                  OFFSET(32)   0744       object    1 offset 1754
+                  OFFSET(32)   0890       object    1 offset 1894
+                  OFFSET(32)   chain:06   object    1 offset 1a54
+                         0894 0898 089c 0914 0918 091c 
+                  OFFSET(32)   094c       object    1 offset 1dd4
+                  OFFSET(32)   chain:24   object    1 offset 1e9c
+                         08a0 08a4 08a8 08ac 08b0 08b4 08b8 08bc 08c0 08c4 
+                         08c8 08cc 08d0 08d4 08d8 08dc 08e4 08e8 08ec 08f0 
+                         08f4 08f8 08fc 0900 0904 0908 0920 0928 092c 0930 
+                         0934 0944 0948 0950 0958 095c 
+                  OFFSET(32)   0938       object    1 offset 1d9c
+                  OFFSET(32)   chain:02   object    2 offset 0820
+                         0006 0039 
+                  OFFSET(32)   chain:04   object    2 offset 08a0
+                         04ac 0538 0610 064b 
+                  OFFSET(32)   073c       object    1 offset 1760
+                  OFFSET(32)   0bf8       object    2 offset 0564
+                  OFFSET(32)   0710       object    1 offset 176c
+                  OFFSET(32)   chain:02   object    2 offset 08ac
+                         07cc 082c 
+                  OFFSET(32)   007d       object    2 offset 03b0
+                  OFFSET(32)   071c       object    1 offset 1778
+                  OFFSET(32)   0c01       object    2 offset 0578
+                  OFFSET(32)   chain:07   object    1 offset 1afc
+                         08e0 0910 0924 093c 0940 0954 0960 
+
+page 3            type         offset     target
+obj  1:2000       REL OFF(32)  chain:0b   imp DOSCALLS.282
+                         0b20 0b38 0bd8 0bf1 0c0a 0c65 0c7e 0c97 0cc2 0cdb 
+                         0cf4 
+                  REL OFF(32)  chain:02   imp DOSCALLS.299
+                         01d1 039a 
+                  REL OFF(32)  chain:04   imp DOSCALLS.304
+                         04bc 073f 089b 0a57 
+                  OFFSET(32)   chain:09   object    2 offset 0884
+                         0bc4 0bdd 0bf6 0c51 0c6a 0c83 0cae 0cc7 0ce0 
+                  OFFSET(32)   0c73       object    2 offset 0608
+                  OFFSET(32)   004b       object    2 offset 08cc
+                  OFFSET(32)   0cd0       object    2 offset 060c
+                  OFFSET(32)   02da       object    2 offset 0590
+                  OFFSET(32)   08df       object    2 offset 03d0
+                  OFFSET(32)   0d0c       object    2 offset 0610
+                  OFFSET(32)   chain:03   object    2 offset 009c
+                         0917 0ac4 0f0b 
+                  OFFSET(32)   0be6       object    2 offset 05dc
+                  OFFSET(32)   chain:04   object    2 offset 05e0
+                         0b2d 0bff 0c8c 0ce9 
+                  OFFSET(32)   0b9b       object    2 offset 03e0
+                  OFFSET(32)   chain:02   object    2 offset 08a0
+                         0fba 0fdd 
+                  OFFSET(32)   0c27       object    2 offset 05e4
+                  OFFSET(32)   0de7       object    2 offset 08a4
+                  OFFSET(32)   chain:03   object    2 offset 0828
+                         02b6 04fe 061a 
+                  OFFSET(32)   chain:0d   object    2 offset 082c
+                         00df 0237 025f 0271 0289 02f4 0305 031a 04f2 062a 
+                         06de 079c 0865 
+                  OFFSET(32)   chain:03   object    2 offset 05ac
+                         0bcd 0c5a 0cb7 
+                  OFFSET(32)   chain:02   object    2 offset 08ac
+                         0d86 0de2 
+                  OFFSET(32)   chain:0b   object    2 offset 0530
+                         0b1b 0b33 0bd3 0bec 0c05 0c60 0c79 0c92 0cbd 0cd6 
+                         0cef 
+                  OFFSET(32)   0dd5       object    2 offset 03f0
+                  OFFSET(32)   chain:03   object    1 offset 0f38
+                         015c 0434 08da 
+                  OFFSET(32)   0efb       object    2 offset 00b8
+
+page 4            type         offset     target
+obj  1:3000       REL OFF(32)  chain:02   imp DOSCALLS.256
+                         0722 09f6 
+                  REL OFF(32)  0cbf       imp MSG.6
+                  REL OFF(32)  chain:04   imp DOSCALLS.282
+                         0b08 0b4c 0bed 0c30 
+                  REL OFF(32)  08c0       imp DOSCALLS.224
+                  OFFSET(32)   03b1       object    2 offset 0500
+                  OFFSET(32)   chain:03   object    2 offset 08d4
+                         073f 0a11 0c7b 
+                  OFFSET(32)   03ac       object    2 offset 0098
+                  OFFSET(32)   0cac       object    1 offset 3c98
+                  OFFSET(32)   chain:03   object    2 offset 009c
+                         00bf 015c 02ee 
+                  OFFSET(32)   chain:07   object    2 offset 08a0
+                         0003 0644 0735 096b 097d 0a07 0c66 
+                  OFFSET(32)   0820       object    2 offset 0630
+                  OFFSET(32)   chain:02   object    2 offset 0530
+                         08ce 08d4 
+                  OFFSET(32)   chain:03   object    1 offset 0f38
+                         0098 0120 08e0 
+                  OFFSET(32)   0254       object    2 offset 00b8
+
+page 5            type         offset     target
+obj  2:0000       OFFSET(32)   00b4       object    2 offset 0540
+                  OFFSET(32)   06e4       object    1 offset 1f80
+                  OFFSET(32)   07c8       object    1 offset 33c0
+                  OFFSET(32)   07ec       object    1 offset 37c0
+                  OFFSET(32)   0718       object    1 offset 2982
+                  OFFSET(32)   0754       object    1 offset 2e82
+                  OFFSET(32)   06c4       object    1 offset 1083
+                  OFFSET(32)   0748       object    1 offset 2d83
+                  OFFSET(32)   0690       object    1 offset 0204
+                  OFFSET(32)   06a8       object    1 offset 0744
+                  OFFSET(32)   06cc       object    1 offset 1084
+                  OFFSET(32)   0750       object    1 offset 2d84
+                  OFFSET(32)   070c       object    1 offset 2905
+                  OFFSET(32)   0784       object    1 offset 3087
+                  OFFSET(32)   079c       object    1 offset 3207
+                  OFFSET(32)   07b4       object    1 offset 3387
+                  OFFSET(32)   066c       object    1 offset 0088
+                  OFFSET(32)   chain:02   object    2 offset 0148
+                         0090 01cc 
+                  OFFSET(32)   chain:02   object    2 offset 0208
+                         0098 02b0 
+                  OFFSET(32)   0744       object    1 offset 2d48
+                  OFFSET(32)   0814       object    1 offset 3c89
+                  OFFSET(32)   0774       object    1 offset 2ecc
+                  OFFSET(32)   0790       object    1 offset 310e
+                  OFFSET(32)   069c       object    1 offset 0650
+                  OFFSET(32)   0720       object    1 offset 2990
+                  OFFSET(32)   075c       object    1 offset 2e90
+                  OFFSET(32)   0700       object    1 offset 2512
+                  OFFSET(32)   0778       object    1 offset 2f92
+                  OFFSET(32)   067c       object    1 offset 0153
+                  OFFSET(32)   06e8       object    1 offset 2053
+                  OFFSET(32)   0714       object    1 offset 2914
+                  OFFSET(32)   078c       object    1 offset 3094
+                  OFFSET(32)   07bc       object    1 offset 3394
+                  OFFSET(32)   0810       object    1 offset 3994
+                  OFFSET(32)   0724       object    1 offset 2997
+                  OFFSET(32)   07f0       object    1 offset 3858
+                  OFFSET(32)   07fc       object    1 offset 3899
+                  OFFSET(32)   07c0       object    1 offset 339b
+                  OFFSET(32)   0798       object    1 offset 311c
+                  OFFSET(32)   07a4       object    1 offset 321c
+                  OFFSET(32)   0804       object    1 offset 38dc
+                  OFFSET(32)   0670       object    1 offset 009e
+                  OFFSET(32)   07d8       object    1 offset 361f
+                  OFFSET(32)   0684       object    1 offset 0160
+                  OFFSET(32)   03c0       object    2 offset 0560
+                  OFFSET(32)   06d0       object    1 offset 1f60
+                  OFFSET(32)   06f0       object    1 offset 2060
+                  OFFSET(32)   0708       object    1 offset 2520
+                  OFFSET(32)   03e0       object    2 offset 05a0
+                  OFFSET(32)   0780       object    1 offset 2fa0
+                  OFFSET(32)   0730       object    1 offset 2ae1
+                  OFFSET(32)   06f4       object    1 offset 2422
+                  OFFSET(32)   07cc       object    1 offset 33e3
+                  OFFSET(32)   07d4       object    1 offset 33e4
+                  OFFSET(32)   07f8       object    1 offset 3864
+                  OFFSET(32)   0694       object    1 offset 0526
+                  OFFSET(32)   0664       object    1 offset 2a26
+                  OFFSET(32)   0678       object    1 offset 00e8
+                  OFFSET(32)   chain:02   object    2 offset 01a8
+                         0094 022c 
+                  OFFSET(32)   009c       object    2 offset 0268
+                  OFFSET(32)   00b8       object    2 offset 02e8
+                  OFFSET(32)   06b8       object    1 offset 1068
+                  OFFSET(32)   072c       object    1 offset 2a28
+                  OFFSET(32)   0760       object    1 offset 2eab
+                  OFFSET(32)   chain:02   object    1 offset 1f6c
+                         0300 06d8 
+                  OFFSET(32)   06ac       object    1 offset 0f2c
+                  OFFSET(32)   07e0       object    1 offset 362c
+                  OFFSET(32)   07e4       object    1 offset 37ac
+                  OFFSET(32)   07a8       object    1 offset 322d
+                  OFFSET(32)   02a8       object    2 offset 0870
+                  OFFSET(32)   06fc       object    1 offset 2430
+                  OFFSET(32)   0660       object    1 offset 29b0
+                  OFFSET(32)   0738       object    1 offset 2af0
+                  OFFSET(32)   07b0       object    1 offset 3230
+                  OFFSET(32)   06dc       object    1 offset 1f73
+                  OFFSET(32)   06c0       object    1 offset 1074
+                  OFFSET(32)   0688       object    1 offset 01f8
+                  OFFSET(32)   06a0       object    1 offset 0738
+                  OFFSET(32)   06b4       object    1 offset 0f38
+                  OFFSET(32)   0768       object    1 offset 2eb8
+                  OFFSET(32)   073c       object    1 offset 2d3a
+                  OFFSET(32)   02a4       object    2 offset 00bc
+                  OFFSET(32)   076c       object    1 offset 2ebf
+                  OFFSET(32)   0808       object    1 offset 393f

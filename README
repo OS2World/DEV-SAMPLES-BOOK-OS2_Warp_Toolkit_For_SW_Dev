@@ -1,0 +1,46 @@
+                 The OS/2 Warp Toolkit for Software Developers
+
+
+       This diskette contains the sample programs that accompany the
+       text in the book.  Each sample is in it's own directory.  We have
+       included the source, compiled .OBJs, makefiles and running
+       executables for all samples.  You will also find that we have
+       included special files that the book mentions such as output from
+       EXEHDR.EXE or from DECODE.EXE.
+
+       In addition you will find the complete source for DECODE.EXE, the
+       tool we use to inspect .OBJ and .LIB files throughout the book..
+
+       You can look at the files on the diskette or, if you prefer, you
+       can copy them to your hard file.
+
+       As mentioned in the text, these samples are used only to
+       illustrate points brought up in the book.  They are not intended
+       to teach programming.  They are purposely simple and redundant,
+       but should help you understand the material as you read the book.
+
+       Here is a very brief description of the contents of each of the
+       directories on this diskette.
+
+       SMP1) Used to create .OBJ for beginning inspection
+
+       SMP2) Shows creation of a library (.LIB) file
+
+       SMP3) Putting a function into a Dynamic Link Library
+
+       SMP4) Creating a Dynamic Link Library without an Import Library
+
+       SMP5) Creating a Dynamic Link Library that contains C Runtime
+       functions
+
+       SMP6) Use of FWDSTAMP.EXE to replace functions within a Dynamic
+       Link Library
+
+       SMP7) Calling a 32-bit function from a 16-bit program
+
+       SMP8) Calling a 16-bit function from a 32-bit program
+
+       DECODE) The DECODE.EXE tool for inspecting .OBJ and .LIB files
+
+
+

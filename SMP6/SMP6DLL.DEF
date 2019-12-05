@@ -1,0 +1,45 @@
+;=========================================================================
+; SMP6DLL.DEF - DLL Sample program dynamic linking library definition file
+;=========================================================================
+
+LIBRARY   SMP6DLL
+
+DESCRIPTION  'OS/2 32-bit DLL - used in forward stamp'
+
+PROTMODE
+
+DATA      MULTIPLE READWRITE LOADONCALL
+
+CODE      LOADONCALL
+
+EXPORTS
+    CharCnt
+    WordCnt
+   _PGLOBAL_PTR
+   _critlib_except                            ; ****
+   _DosSelToFlat                              ; ****
+   _DosFlatToSel                              ; ****
+   stderr
+   stdin
+   stdout
+   _CRT_init                                  ; ****
+   fopen
+   fclose
+   _environ
+   _EXE_Exception                             ; ****
+   _Exception                                 ; ****
+   _PrintErrMsg                               ; ****
+   _exception_procinit                        ; ****
+   _exception_dllinit                         ; ****
+   _matherr                                   ; ****
+   _printfieee
+   _terminate                                 ; ****
+   exit                                       ; ****
+   free                                       ; ****
+   malloc                                     ; ****
+   printf
+   scanf
+   strdup                                     ; ****
+   strpbrk                                    ; ****
+   fgetc
+

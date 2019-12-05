@@ -1,0 +1,10 @@
+;===============================================
+; DECODE.DEF - Executable module definition file
+;===============================================
+
+NAME            DECODE        WINDOWCOMPAT
+
+DESCRIPTION     'Decoder Tool'
+
+PROTMODE
+

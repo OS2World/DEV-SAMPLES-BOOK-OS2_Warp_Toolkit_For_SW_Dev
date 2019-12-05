@@ -1,0 +1,20 @@
+;===========================================
+; MY.DEF - DLL Forward Stamp definition file
+;===========================================
+
+LIBRARY    SMP6DLL
+
+DESCRIPTION  'OS/2 32-bit DEF - Used in forwarding'
+
+IMPORTS
+
+    WORDCNT = NEW.MYWC
+    CHARCNT = NEW.MYWC
+
+EXPORTS
+
+     WORDCNT
+     CHARCNT
+
+
+

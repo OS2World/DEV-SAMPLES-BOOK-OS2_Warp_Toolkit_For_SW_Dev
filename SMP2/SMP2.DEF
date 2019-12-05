@@ -1,0 +1,10 @@
+;=================================================
+; SMP2.DEF - Library Sample Module Definition File
+;=================================================
+
+NAME    SMP2    WINDOWCOMPAT
+
+DESCRIPTION  'OS/2 32-bit EXE - using libraries'
+
+PROTMODE
+

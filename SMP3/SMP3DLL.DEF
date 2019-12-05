@@ -1,0 +1,13 @@
+;=========================================================================
+; SMP3DLL.DEF - DLL Sample program dynamic linking library definition file
+;=========================================================================
+
+LIBRARY    SMP3DLL
+
+DESCRIPTION  'OS/2 32-bit DLL - Simple DLL'
+
+PROTMODE
+
+EXPORTS
+   recur
+

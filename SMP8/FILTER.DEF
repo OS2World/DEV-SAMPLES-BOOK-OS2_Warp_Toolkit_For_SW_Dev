@@ -1,0 +1,20 @@
+;========================================================================
+; FILTER.DEF - DLL Sample program dynamic linking library definition file
+;========================================================================
+
+LIBRARY        Filter
+
+DESCRIPTION    'OS/2 32-bit DLL - used with a 16-bit DLL'
+
+PROTMODE
+
+DATA           SHARED
+
+CODE           LOADONCALL
+
+HEAPSIZE       8192
+
+EXPORTS        CallMakeSomeNoise @1
+
+IMPORTS        Dll16Bit.MakeSomeNoise
+

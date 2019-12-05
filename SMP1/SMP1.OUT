@@ -1,0 +1,115 @@
+
+Operating System/2 Executable File Header Utility
+Version 3.00.003 May 23 1995
+Copyright (C) IBM Corporation 1988-1995
+Copyright (C) Microsoft Corp. 1988-1992.
+All rights reserved.
+
+.EXE size (bytes)         49a0
+Magic number:             5a4d
+Bytes on last page:       0200
+Pages in file:            0002
+Relocations:              0000
+Paragraphs in header:     0004
+Extra paragraphs needed:  0000
+Extra paragraphs wanted:  ffff
+Initial stack location:   0008:0200
+Word checksum:            0000
+Entry point:              0000:0000
+Relocation table address: 0040
+Reserved words:
+ 0000 0000 0000 0000 0000 0000 0000 0000
+ 0000 0000 0000 0000 0000
+New executable header address:  00000080
+Memory needed:            1K
+
+Module:                         smp1
+Executable format level:        0
+CPU type:                       Intel 80386 or upwardly compatible
+Operating system:               Operating System/2
+Module version:                 20002
+Module type:                    Program
+                                NO internal fixups in executable image
+Application type:               Compatible with PM Windowing
+Number of memory pages:         00000005 (5)
+Initial CS:EIP:                 object 1 offset 00000044
+Initial SS:ESP:                 object 2 offset 00008870
+Automatic data object:          2
+Stack allocation:               00008000 (32768) bytes
+Memory page size:               00001000
+Page shift alignment:           00000004
+Fixup section size:             000000db
+Fixup section checksum:         00000000
+Loader section size:            00000061
+Loader section checksum:        00000000
+Object Table:                   00000144 length 00000058 (88)
+Object Table Entries:           00000002 (2)
+Resource Table:                 00000000 length 00000000 (0)
+Resource Table Entries:         00000000 (0)
+Resident Names Table:           0000019c length 00000008 (8)
+Entry Table:                    000001a4 length 00000001 (1)
+Module Directives Table:        00000000 length 00000000 (0)
+Module Directives Entries:      00000000 (0)
+Per-Page Checksum Table:        00000000 length 00000000 (0)
+Imported Modules Name Table:    0000026f length 00000011 (17)
+Imported Modules:               00000003 (3)
+Imported Procedures Name Table: 00000280 length 00000000 (0)
+Preload Instance Pages:         00000400 number 00000000 (0)
+Preload Pages:                  00000400 number 00000000 (0)
+Demand Instance Pages:          00000400 number 00000001 (1)
+Non-resident Names Table:       00000000 length 00000000 (0)
+Non-resident Names Checksum:    00000000
+Debug Information:              00000000 length 00000000 (0)
+
+ no. virtual  virtual  map      map      flags
+     address   size    index    size
+0001 00010000 00003d94 00000001 00000004 EXECUTABLE, READABLE, NONSHARED,
+                                         LOADONCALL, NONCONFORMING, NONRESOURCE,
+                                         NONDISCARDABLE, VALID-PAGES, SWAPPABLE,
+                                         NO 16:16 ALIAS, 32-bit, NOIOPL
+                                           map    physical page flags
+                                          entry    page @  size       
+                                         00000001 00000c00 1000 VALID
+                                         00000002 00001c00 1000 VALID
+                                         00000003 00002c00 1000 VALID
+                                         00000004 00003c00 0da0 VALID
+0002 00020000 00008870 00000005 00000001 READABLE, WRITEABLE, NONSHARED,
+                                         LOADONCALL, NONRESOURCE,
+                                         NONDISCARDABLE, VALID-PAGES, SWAPPABLE,
+                                         NO 16:16 ALIAS, 32-bit, NOIOPL
+                                           map    physical page flags
+                                          entry    page @  size       
+                                         00000001 00000400 0649 ITERATED
+
+
+page 1            type         offset     target
+obj  1:0000       REL OFF(32)  01c5       imp NLS.6
+                  REL OFF(32)  03c1       imp DOSCALLS.348
+                  REL OFF(32)  00f3       imp DOSCALLS.224
+                  REL OFF(32)  chain:02   imp DOSCALLS.296
+                         0039 0098 
+                  REL OFF(32)  chain:08   imp DOSCALLS.299
+                         0265 02a2 02d3 0310 0341 037e 0961 0b2a 
+                  REL OFF(32)  chain:05   imp DOSCALLS.304
+                         0763 077b 0793 0c4c 0ee7 
+                  REL OFF(32)  015a       imp DOSCALLS.312
+
+page 2            type         offset     target
+obj  1:1000       REL OFF(32)  0893       imp DOSCALLS.331
+                  REL OFF(32)  chain:0b   imp DOSCALLS.282
+                         0cb4 0ccc 0d6c 0d85 0d9e 0df9 0e12 0e2b 0e56 0e6f 
+                         0e88 
+                  REL OFF(32)  02e0       imp DOSCALLS.356
+                  REL OFF(32)  013d       imp DOSCALLS.234
+                  REL OFF(32)  chain:02   imp DOSCALLS.304
+                         0043 0bc7 
+                  REL OFF(32)  chain:02   imp DOSCALLS.378
+                         0187 08ae 
+
+page 4            type         offset     target
+obj  1:3000       REL OFF(32)  chain:02   imp DOSCALLS.256
+                         0606 06fe 
+                  REL OFF(32)  0d8b       imp MSG.6
+                  REL OFF(32)  chain:04   imp DOSCALLS.282
+                         0810 0854 08f5 0938 
+                  REL OFF(32)  0ba8       imp DOSCALLS.224

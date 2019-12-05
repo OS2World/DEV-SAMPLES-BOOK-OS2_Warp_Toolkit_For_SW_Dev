@@ -1,0 +1,18 @@
+;==========================================================================
+; DLL32BIT.DEF - DLL Sample program dynamic linking library definition file
+;==========================================================================
+
+LIBRARY        DLL32BIT   ;INITINSTANCE
+
+DESCRIPTION    'OS/2 32 bit DLL - used in from a 16-bit program'
+
+PROTMODE
+
+DATA           SHARED
+
+CODE           LOADONCALL
+
+HEAPSIZE       8192
+
+EXPORTS        MakeSomeNoise @1
+

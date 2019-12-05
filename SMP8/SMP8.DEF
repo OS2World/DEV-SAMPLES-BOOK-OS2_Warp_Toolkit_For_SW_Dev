@@ -1,0 +1,20 @@
+;=============================================
+; SMP8.DEF - Executable module definition file
+;=============================================
+
+
+NAME            SMP8      WINDOWCOMPAT
+
+DESCRIPTION     'OS/2 32-bit EXE - will call a 16-bit DLL'
+
+DATA            MULTIPLE
+
+CODE            MOVEABLE
+
+HEAPSIZE        1024
+
+STACKSIZE       24576
+
+IMPORTS         Filter.CallMakeSomeNoise ; Ordinals are used in the call
+                                         ; to DosQueryProcAddr()
+

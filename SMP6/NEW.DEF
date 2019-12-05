@@ -1,0 +1,21 @@
+;=====================================================================
+; NEW.DEF - DLL Sample program dynamic linking library definition file
+;=====================================================================
+
+LIBRARY      NEW
+
+DESCRIPTION  'OS/2 32-bit DLL - will be forwarded to DLL'
+
+PROTMODE
+
+IMPORTS
+   SMP6DLL.Printf
+   SMP6DLL._printfieee
+   SMP6DLL.fgetc
+   SMP6DLL.Fclose
+   SMP6DLL._DosSelToFlat
+   SMP6DLL._DosFlatToSel
+
+EXPORTS
+     Mywc
+

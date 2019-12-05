@@ -1,0 +1,18 @@
+;==========================================================================
+; DLL16BIT.DEF - DLL Sample program dynamic linking library definition file
+;==========================================================================
+
+LIBRARY        Dll16Bit
+
+DESCRIPTION    'OS/2 16-bit DLL Sample'
+
+PROTMODE
+
+DATA           SHARED
+
+CODE           LOADONCALL
+
+HEAPSIZE       8192
+
+EXPORTS        MAKESOMENOISE @1
+

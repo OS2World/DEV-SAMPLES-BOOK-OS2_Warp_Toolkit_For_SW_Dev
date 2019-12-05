@@ -1,0 +1,10 @@
+;=============================================
+; SMP3.DEF - Executable module definition file
+;=============================================
+
+NAME       SMP3     WINDOWCOMPAT
+
+DESCRIPTION  'OS/2 32-bit EXE - calls a DLL'
+
+PROTMODE
+

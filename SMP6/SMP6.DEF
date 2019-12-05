@@ -1,0 +1,10 @@
+;============================================
+; SMP6.DEF - Executable module defintion file
+;============================================
+
+NAME     SMP6     WINDOWCOMPAT
+
+DESCRIPTION  'OS/2 32-bit EXE - used in forward stamp'
+
+PROTMODE
+

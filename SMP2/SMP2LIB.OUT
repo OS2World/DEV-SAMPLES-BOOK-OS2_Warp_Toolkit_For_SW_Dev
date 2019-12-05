@@ -1,0 +1,19 @@
+Licensed Materials - Property of IBM
+IBM Library Manager Version 1.1
+(C) Copyright IBM Corp., 1991,1993.  All Rights Reserved.
+US Government Users Restricted Rights - Use, duplication or disclosure
+restricted by GSA ADP Schedule Contract with IBM Corp.
+
+Library name : D:\BOOK\SAMPLES\SMP2\smp2lib.lib
+
+Listing detail level : 1
+
+
+00000:recur (OFFSET:0x00000010, SIZE:0x00000233):
+ - Public Definitions:
+     level                                 recur                              
+
+ - External Definitions:
+     printf                                                                                                                                                                                                                                                    
+
+

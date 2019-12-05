@@ -1,0 +1,10 @@
+;============================================
+; SMP5.DEF - Executable module defintion file
+;============================================
+
+NAME     SMP5     WINDOWCOMPAT
+
+DESCRIPTION  'OS/2 32-bit EXE - used with DLL without C Run-Time Library'
+
+PROTMODE
+
